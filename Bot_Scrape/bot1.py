@@ -25,7 +25,7 @@ async def on_command_error(ctx, exc):
 @client.event
 async def on_ready():
           print('We are activated as {0.user}'.format(client))
-          channel = client.get_channel(838131329597177932)
+          channel = client.get_channel(channel_id)
           data = fp("https://www.innvictus.com/jordan/c/jordan?q=%3Arelevance%3Atype%3A100010000000000000")
           for i in data:
               product,price,model,stat,quant,size,img,link =i[0], i[1], i[2], i[3], i[4], i[5],i[6],i[7]
